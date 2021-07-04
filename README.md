@@ -8,23 +8,23 @@ npm i
 ## Deployment
 ### Avash
 ```sh
-avash:deploy
+npm run avash:deploy
 ```
 
 ### Fuji Testnet
 ```sh
-fuji:deploy
+npm run fuji:deploy
 ```
 ```sh
-fuji:export
+npm run fuji:export
 ```
 
 ### Avalanche Mainnet
 ```sh
-avalanche:deploy
+npm run avalanche:deploy
 ```
 ```sh
-avalanche:export
+npm run avalanche:export
 ```
 
 ## Deployed Contracts
