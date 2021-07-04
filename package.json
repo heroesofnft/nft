@@ -1,0 +1,64 @@
+{
+  "name": "hon-heroes-token",
+  "version": "1.0.0",
+  "description": "Heroes of NFT - HON is a new generation online game with true ownership where spend HON tokens and claim Heroes - HRO tokens",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test",
+    "deploy": "deploy"
+  },
+  "scripts": {
+    "build": "npx hardhat compile",
+    "console": "npx hardhat console",
+    "test": "npx hardhat test --verbose",
+    "avash:deploy": "npx hardhat --network avash deploy --export exports/avash/nft-exports.json",
+    "fuji:deploy": "npx hardhat --network fuji deploy --export exports/fuji/nft-exports.json",
+    "fuji:export": "npx hardhat --network fuji export --export exports/fuji/nft-exports.json",
+    "avalanche:deploy": "npx hardhat --network avalanche deploy --export exports/avalanche/nft-exports.json",
+    "avalanche:export": "npx hardhat --network avalanche export --export exports/avalanche/nft-exports.json"
+  },
+  "keywords": [
+    "heroesofnft",
+    "heroes",
+    "nft",
+    "avalanche",
+    "avax"
+  ],
+  "author": "defikintaro",
+  "license": "GPL-2.0 or Later",
+  "devDependencies": {
+    "@ethersproject/bignumber": "^5.4.0",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-truffle5": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@typechain/ethers-v5": "^6.0.5",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.17.4",
+    "avalanche": "^3.7.0",
+    "chai": "^4.3.4",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.4.1",
+    "hardhat-abi-exporter": "^2.2.0",
+    "hardhat-deploy": "^0.7.11",
+    "hardhat-deploy-ethers": "^0.3.0-beta.10",
+    "hardhat-gas-reporter": "^1.0.4",
+    "hardhat-spdx-license-identifier": "^2.0.3",
+    "hardhat-typechain": "^0.3.5",
+    "hardhat-watcher": "^2.1.1",
+    "solidity-coverage": "^0.7.16",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^4.0.3",
+    "typescript": "^4.3.5",
+    "yarn": "^1.22.10"
+  },
+  "dependencies": {
+    "@poanet/solidity-flattener": "^3.0.6",
+    "@tenderly/hardhat-tenderly": "^1.0.12",
+    "source-verify": "^1.0.0",
+    "truffle-flattener": "^1.5.0"
+  }
+}
